@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // get
+        // text() - Sets or returns the text content of selected elements
+        // html() - Sets or returns the content of selected elements (including HTML markup)
+        // val() - Sets or returns the value of form fields
+        // $(document).ready(function () {
+        //     $("#btn1").click(function () {
+        //         alert("Text: " + $("#test").text());
+        //     });
+        //     $("#btn2").click(function () {
+        //         alert("Text: " + $("#test").html());
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         alert("Value: " + $("#p1").val());
+        //     });
+        // });
+        /* attr()*/
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         alert($("#p1").attr("href"));
+        //     });
+        // });
+        // $(document).ready(function(){
+        //     $("#btn1").click(function(){
+        //         $("#test1").text("hello dhru!");
+        //     });
+        //     $("#btn2").click(function(){
+        //         $("#test2").html("<b>Hello dhru!</b>")
+        //     });
+        //     $("#btn3").click(function(){
+        //         $("#test3").val("Dolly Duck");
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("#btn1").click(function () {
+        //         $("#test1").text(function (i, origText) {
+        //             return "Old text:" + origText + "New Text: hello world! (index: " + i + ")";
+        //         });
+        //     });
+        //     $("#btn2").click(function () {
+        //         $("#test2").html(function (i, origText) {
+        //             return "Old text:" + origText + "New html: hello <b>world!</b>(index: " + i + ")";
+        //         });
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("#p1").attr({
+        //             "href": "https://www.w3schools.com/jquery/",
+        //             "title": "W3Schools jQuery Tutorial"
+        //         });
+        //     });
+        // });
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").append("<p>append text</p>")
+            });
+            $("#btn2").click(function(){
+                $("ol").append("<li>append Item</li>")
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- basic concept of Jquery Set,Get,Add,Remove-->
+    <!-- <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button> -->
+    <!-- <p>Name: <input type="text" id="p1" value="Mickey Mouse"></p>
+
+    <button>Show Value</button> -->
+    <!-- <p><a href="https://www.youtube.com" id="p1">youtube.com</a></p>
+
+    <button>Show href Value</button> -->
+    <!-- <p id="test1">This is a paragraph.</p>
+    <p id="test2">This is another paragraph.</p>
+    
+    <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+    
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button> -->
+    <!-- <p id="test1">This is a <b>bold</b> paragraph.</p>
+    <p id="test2">This is another <b>bold</b> paragraph.</p>
+
+    <button id="btn1">Show Old/New Text</button>
+    <button id="btn2">Show Old/New HTML</button> -->
+    <!-- <p><a href="https://www.w3schools.com" title="some title" id="p1">W3Schools.com</a></p>
+    <button>Change href and title</button>
+    <p>Mouse over the link to see that the href attribute has changed and a title attribute is set.</p> -->
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+
+    <button id="btn1">Append text</button>
+    <button id="btn2">Append list items</button>
+
+
+</body>
+
+</html>
